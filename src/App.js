@@ -6,9 +6,7 @@ import UseLocalStorage from "./hooks/use-localstorage/UseLocalStorage";
 
 function App() {
   // const [userList, setUserList] = useState([]);
-  const [userList, setUserList] = UseLocalStorage("todos", [
-    { name: "nurtilek", age: 19, id: Math.random().toString(), delete: false },
-  ]);
+  const [userList, setUserList] = UseLocalStorage("todos", []);
   const [empty, setEmpty] = useState(false);
 
   const addUserHandler = (uName, uAge) => {
